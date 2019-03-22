@@ -1,0 +1,32 @@
+h1{
+	text-align: center;
+}
+#box{
+	 height: 50px;
+	 width: 50px;
+	 font-size: 30px;
+	 text-align: center;
+}
+#gameBoard{
+	text-align: center;
+
+}
+#top3{
+	padding: 10px;
+}
+#next3{
+	padding: 10px;
+}
+#last3{
+	padding: 10px;
+}
+
+#one{
+	padding: 10px;
+}
+#submit{
+	text-align: center;
+}
+#clear{
+	text-align: center;
+}
