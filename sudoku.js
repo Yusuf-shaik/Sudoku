@@ -5,6 +5,9 @@ var hardSolution=[4,5,3,8,2,6,1,9,7,8,9,2,5,7,1,6,3,4,1,6,7,4,9,3,5,2,8,7,1,4,9,
 var userInput=[]
 var sum=0;
 
+var startTime;
+var endTime;
+
 function say(){
 	var x=document.forms["form"];
 
@@ -26,8 +29,11 @@ function say(){
 	else{
 		alert("You Lost!")
 	}
+
+	end();
 	
 }
+
 
 
 function sayHard(){
@@ -51,6 +57,7 @@ function sayHard(){
 	else{
 		alert("You Lost!")
 	}
+	end();
 	
 }
 
@@ -77,7 +84,84 @@ function sayEasy(){
 		alert("You Lost!")
 	}
 	console.log(sum);
+
+	end();
+
+	// endTime=new Date();
+
+	// var totalTime=(endTime-startTime)/1000
+
+	// console.log(totalTime);
+	// // document.getElementById("time").innerHTML= "Total Time: " + Math.floor(totalTime) + " seconds" ;
+	// if (totalTime<60) {
+	// 	alert( "Total Time: " + Math.floor(totalTime) + " seconds" );
+
+	// }
+	// else if (totalTime>=60) {
+	// 	minutes=totalTime/60;
+	// 	seconds=totalTime%60;
+	// 	if (Math.floor(minutes)==1) {
+	// 		Msuffix= " minute "
+	// 	}
+	// 	else{
+	// 		Msuffix=" minutes "
+	// 	}
+
+	// 	if (Math.floor(seconds==1)) {
+	// 		SSuffix=" second "
+	// 	}
+	// 	else{
+	// 		SSuffix = " seconds "
+	// 	}
+	// 		alert( "Total Time: " + Math.floor(minutes) + Msuffix + Math.floor(seconds) + SSuffix) 
+
+	// }
+
+
+	// startTime=new Date();
 	
+
+	
+}
+function end(){
+	endTime=new Date();
+
+	var totalTime=(endTime-startTime)/1000
+
+	console.log(totalTime);
+	// document.getElementById("time").innerHTML= "Total Time: " + Math.floor(totalTime) + " seconds" ;
+	if (totalTime<60) {
+		alert( "Total Time: " + Math.floor(totalTime) + " seconds" );
+
+	}
+	else if (totalTime>=60) {
+		minutes=totalTime/60;
+		seconds=totalTime%60;
+		if (Math.floor(minutes)==1) {
+			Msuffix= " minute "
+		}
+		else{
+			Msuffix=" minutes "
+		}
+
+		if (Math.floor(seconds==1)) {
+			SSuffix=" second "
+		}
+		else{
+			SSuffix = " seconds "
+		}
+			alert( "Total Time: " + Math.floor(minutes) + Msuffix + Math.floor(seconds) + SSuffix) 
+
+	}
+
+
+	startTime=new Date();
+	
+}
+
+function clear(){
+	document.getElementById("time").reset();
+
 }
 
 
@@ -108,24 +192,8 @@ function resetH(){
 }
 
 
-// function count(){
-// 	for (var i =0; i <9; i++) {
-// 		if (users[i]==solution[i]) {
-// 			console.log("true")
-// 		}
-// 	}
-// }
+function start(){
+	startTime=new Date();
+}
 
-// function loadGame(){
-// 	for (var i =0; i <9; i++) {
-// 		// document.getElementById("hey").innerHTML=i;
-// 	}
-// }
-
-
-// // function count(){
-// // 	for (var i = 0; i < cars.length; i++) {
-// // 		console.log(cars[i])
-// // 	}
-// // }
 

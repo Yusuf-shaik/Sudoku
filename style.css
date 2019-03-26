@@ -34,9 +34,23 @@ h1{
 }
 
 body{
-	background-image: url("stars.jpg");
+
+	background-image: url(stars.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 
 }
+
+#time{
+	color: white;
+}
+iframe{
+	align-content: center;
+}
+
+/*html{
+	background-image: linear-gradient(orange, blue);
+
+}
+*/
