@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script type="text/javascript" src="sudoku.js"></script>
+	<title>Sudoku</title>
+	<h1>Sudoku Game</h1>
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="easy.html">Easy</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">Medium</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="hard.html">Hard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="pickImage.html">Pick Background Image</a>
+  </li>
+</ul>
+
+
+	<h4>Hard Puzzle</h4>
+<form id="formHard" action="">
+	<div id="gameBoard">
+		
+		<div id="top3">
+			<div>
+				 <input type="text" name="box" id="box" value="4" readonly>
+				 <input type="text" name="box" id="box" value="5" readonly>
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"> | 
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" value="2" readonly> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"value="7" readonly>
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box" value="6" readonly>
+				 <input type="text" name="box" id="box" value="3" readonly>
+				 <input type="text" name="box" id="box">
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" value="2" readonly>
+				 <input type="text" name="box" id="box"  value="8" readonly>
+			 </div>
+		</div>
+
+		<div id="next3">
+			<div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box" value="9" readonly>
+				 <input type="text" name="box" id="box" value="5" readonly>
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"  value="8" readonly>
+				 <input type="text" name="box" id="box" value="6" readonly> |
+				 <input type="text" name="box" id="box" >
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box"  value="2" readonly>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" value="2" readonly>
+				 <input type="text" name="box" id="box"  > |
+				 <input type="text" name="box" id="box"  value="6" readonly>
+				 <input type="text" name="box" id="box" >
+				 <input type="text" name="box" id="box" > |
+				 <input type="text" name="box" id="box" value="7" readonly>
+				 <input type="text" name="box" id="box"  value="5" readonly>
+				 <input type="text" name="box" id="box">
+			 </div>
+		</div>	
+
+		<div id="last3">
+			<div>
+				 <input type="text" name="box" id="box" >
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" > |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" > |
+				 <input type="text" name="box" id="box"  value="4" readonly>
+				 <input type="text" name="box" id="box"  value="7" readonly>
+				 <input type="text" name="box" id="box" value="6" readonly>
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"  value="7" readonly>
+				 <input type="text" name="box" id="box"> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"  value="4" readonly>
+				 <input type="text" name="box" id="box" value="5" readonly> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+			 </div>
+			 <div>
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box" value="8" readonly> |
+				 <input type="text" name="box" id="box" >
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box"  value="9" readonly> |
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+				 <input type="text" name="box" id="box">
+			 </div>
+		 </div>
+	</div>
+</form>
+<div id="submit">
+	<input type="button" name="button" value="Submit" onclick="sayHard()"></input>
+</div>
+<div id="clear">
+	<input type="button" name="clear" value="reset" onclick="resetH()"></input>
+</div>
+
+
+
+
+</body>
+</html>
