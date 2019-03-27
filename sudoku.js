@@ -240,3 +240,74 @@ function changeBackground(){
 // }
 
 
+
+function userValidation(){
+	var name = document.getElementById("userName").value;
+	var pass = document.getElementById("password").value;
+	var userEmail = document.getElementById("email").value;
+	var creditCard = document.getElementById("Card").value;
+
+	var creditCardLength=creditCard.toString().length
+	// console.log(thename)
+	
+
+
+	
+	var x=true
+	var y=true
+	var z=true
+	var w=true
+	var v=true
+
+	
+	if (name=="") //validates that there are no digits in name
+	{
+		alert("Please enter a username, it cannot be blank");
+		z=false
+	}
+
+	// // if (confirmation != thename)
+	// // {
+	// // 	alert("Please make sure usernames match");
+	// // 	return false;
+	// // }
+
+	if (pass == "")
+	{
+		alert("please Enter a Password");
+		w=false
+	}
+
+	if (userEmail== "")
+	{
+		alert("Please enter an email");
+		x=false
+	}
+
+	if (creditCard=="" || creditCardLength<16) //validates only numbers and not 
+	{
+		alert("Credit card number must be at least 16 digit long!");
+		y=false
+
+	}
+
+	if (isNaN(creditCard)) {
+		alert("Credit card must be numbers")
+		v=false
+
+	}
+console.log(x)
+console.log(y)
+
+console.log(z)
+console.log(y)
+
+	if (x&&y&&z&&w&&v) {
+		window.location.href="howToPlay.html"
+	}
+
+}
+
+//testing, contribution, user stories
+
+
