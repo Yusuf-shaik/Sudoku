@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paying Information</title>
+	<script type="text/javascript" src="checkValidation.js"></script>>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<form onsubmit= "return userValidation()" >
+		<fieldset>
+			<legend> Your Information </legend>
+			<p>
+				<label> Email: </label>
+				<input type="Email" name="Email" id="Email" placeholder="Type Email" />
+			</p>
+
+			<p>
+				<label> Credit Card Number: </label>
+				<input type="Card" name="Card" id="Card" placeholder="Your 16 digit number"> 
+			</p>
+
+			<input type="submit" value="submit">
+		</fieldset>
+	</form>
+	</body>
+	</html>
