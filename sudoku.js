@@ -8,6 +8,7 @@ var sum=0;
 var startTime;
 var endTime;
 
+//check solution for medium game
 function say(){
 	var x=document.forms["form"];
 
@@ -34,8 +35,13 @@ function say(){
 	
 }
 
+// function numbersOnly(){
+// 	var number=document.getElementById("box").value
+// 	if ((typeof number)==string) {}
+// }
 
 
+//check solution for hard game
 function sayHard(){
 	var x=document.forms["formHard"];
 
@@ -61,7 +67,7 @@ function sayHard(){
 	
 }
 
-
+//check solution for easy game
 function sayEasy(){
 	var x=document.forms["formEasy"];
 
@@ -123,6 +129,8 @@ function sayEasy(){
 
 	
 }
+
+//calculate and print end time for timer
 function end(){
 	endTime=new Date();
 
@@ -159,12 +167,13 @@ function end(){
 	
 }
 
-function clear(){
-	document.getElementById("time").reset();
+//reset
+// function clear(){
+// 	document.getElementById("time").reset();
 
-}
+// }
 
-
+//reset the easy game board
 function resetE(){
 	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
 		document.getElementById("formEasy").reset();
@@ -174,6 +183,7 @@ function resetE(){
 
 }
 
+//reset the medium game board
 function resetM(){
 	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
 		document.getElementById("form").reset();
@@ -182,6 +192,7 @@ function resetM(){
 	
 }
 
+//reset the hard gameboard
 function resetH(){
 	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
 		document.getElementById("formHard").reset();
@@ -191,6 +202,9 @@ function resetH(){
 
 }
 
+//complete the desired functions for when starting the game
+//set start time
+//hide music options
 
 function start(){
 	startTime=new Date();
@@ -198,7 +212,7 @@ function start(){
 	show.style.display="none"
 
 }
-
+// hide music or show music based on users click
 var count=0;
 function showMusic(){
 	var show=document.getElementById("audio");
@@ -214,6 +228,7 @@ function showMusic(){
 
 }
 
+//change the background color based on user input
 function changeBackground(){
 	var color=document.getElementById("colorMe").value
 	console.log(color)
