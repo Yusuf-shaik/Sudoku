@@ -180,8 +180,8 @@ function resetM(){
 
 	 }
 	
-
 }
+
 function resetH(){
 	 if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
 	 	document.getElementById("formHard").reset();
@@ -194,6 +194,31 @@ function resetH(){
 
 function start(){
 	startTime=new Date();
+	var show=document.getElementById("audio");
+	show.style.display="none"
+
 }
+
+var count=0;
+function showMusic(){
+	var show=document.getElementById("audio");
+
+	if (count%2==1) {
+		show.style.display="none"
+		
+	}
+	if (count%2==0) {
+		show.style.display="block"
+	}
+	count++
+	// if (show.style.display=="none") {
+	// 	show.style.display="block"
+		
+	// }
+
+}
+
+// function hideMusic(){
+// }
 
 

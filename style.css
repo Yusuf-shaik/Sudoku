@@ -1,6 +1,7 @@
 h1{
 	text-align: center;
 	float: right;
+	color: white;
 }
 #box{
 	 height: 50px;
@@ -35,8 +36,8 @@ h1{
 
 body{
 
-	background-image: url(stars.jpg);
-	background-size: cover;
+/*	background-image: url(stars.jpg);
+*/	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 
@@ -54,3 +55,22 @@ iframe{
 
 }
 */
+#audio{
+	position: absolute;
+	color: white;
+	text-align: center;
+	bottom: 0;
+}
+
+/*#bottomOne{
+
+	position: absolute;
+	text-align: center;
+	margin-top: 120px;
+/*	margin-left: 1050px;
+*/
+
+a{
+	color: white;
+}
+
