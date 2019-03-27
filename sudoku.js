@@ -150,7 +150,7 @@ function end(){
 		else{
 			SSuffix = " seconds "
 		}
-			alert( "Total Time: " + Math.floor(minutes) + Msuffix + Math.floor(seconds) + SSuffix) 
+		alert( "Total Time: " + Math.floor(minutes) + Msuffix + Math.floor(seconds) + SSuffix) 
 
 	}
 
@@ -166,27 +166,27 @@ function clear(){
 
 
 function resetE(){
-	 if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
-	 	document.getElementById("formEasy").reset();
+	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
+		document.getElementById("formEasy").reset();
 
-	 }
+	}
 	
 
 }
 
 function resetM(){
-	 if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
-	 	document.getElementById("form").reset();
+	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
+		document.getElementById("form").reset();
 
-	 }
+	}
 	
 }
 
 function resetH(){
-	 if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
-	 	document.getElementById("formHard").reset();
+	if (confirm("Are you Sure you want to reset the game? You will lose all progress?")==true){
+		document.getElementById("formHard").reset();
 
-	 }
+	}
 	
 
 }

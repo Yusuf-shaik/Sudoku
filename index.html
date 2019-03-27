@@ -10,163 +10,163 @@
 </head>
 <body onload="start()">
 
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link" href="easy.html">Easy</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Medium</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="hard.html">Hard</a>
-  </li>
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link" href="easy.html">Easy</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="index.html">Medium</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="hard.html">Hard</a>
+		</li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="howToPlay.html">How to Play</a>
-  </li>
-</ul>
+		<li class="nav-item">
+			<a class="nav-link" href="howToPlay.html">How to Play</a>
+		</li>
+	</ul>
 
+	<p></p>
+	<form id="form" action="">
+		<div id="gameBoard">
+			
+			<div id="top3">
+				<div>
+					<input type="text" name="box" id="box" value="6" readonly>
+					<input type="text" name="box" id="box" value="5" readonly>
+					<input type="text" name="box" id="box" value="9" readonly> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="1" readonly>
+					<input type="text" name="box" id="box"> | 
+					<input type="text" name="box" id="box" value="2" readonly>
+					<input type="text" name="box" id="box" value="8" readonly>
+					<input type="text" name="box" id="box">
+				</div>
+				<div>
+					<input type="text" name="box" id="box" value="1" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="5" readonly>
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="3" readonly>
+					<input type="text" name="box" id="box">
+				</div>
+				<div>
+					<input type="text" name="box" id="box" value="2" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box" value="8" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="1" readonly>
+					<input type="text" name="box" id="box">
+				</div>
+			</div>
 
-<form id="form" action="">
-	<div id="gameBoard">
-		
-		<div id="top3">
-			<div>
-				 <input type="text" name="box" id="box" value="6" readonly>
-				 <input type="text" name="box" id="box" value="5" readonly>
-				 <input type="text" name="box" id="box" value="9" readonly> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="1" readonly>
-				 <input type="text" name="box" id="box"> | 
-				 <input type="text" name="box" id="box" value="2" readonly>
-				 <input type="text" name="box" id="box" value="8" readonly>
-				 <input type="text" name="box" id="box">
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box" value="1" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="5" readonly>
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="3" readonly>
-				 <input type="text" name="box" id="box">
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box" value="2" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box" value="8" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="1" readonly>
-				 <input type="text" name="box" id="box">
-			 </div>
+			<div id="next3">
+				<div>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box" value="1" readonly>
+					<input type="text" name="box" id="box" value="3" readonly>
+					<input type="text" name="box" id="box" value="5" readonly> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="7" readonly>
+					<input type="text" name="box" id="box">
+				</div>
+				<div>
+					<input type="text" name="box" id="box" value="8" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box" value="9" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="2" readonly>
+				</div>
+				<div>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"  value="3" readonly> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="7" readonly>
+					<input type="text" name="box" id="box" value="8" readonly> |
+					<input type="text" name="box" id="box" value="6" readonly>
+					<input type="text" name="box" id="box" value="4" readonly>
+					<input type="text" name="box" id="box">
+				</div>
+			</div>	
+
+			<div id="last3">
+				<div>
+					<input type="text" name="box" id="box" value="3" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="2" readonly> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="9" readonly> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="4" readonly>
+				</div>
+				<div>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="1" readonly> |
+					<input type="text" name="box" id="box" value="8" readonly>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+				</div>
+				<div>
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box" value="8" readonly> |
+					<input type="text" name="box" id="box" value="7" readonly>
+					<input type="text" name="box" id="box" value="6" readonly>
+					<input type="text" name="box" id="box"> |
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+					<input type="text" name="box" id="box">
+				</div>
+			</div>
 		</div>
+	</form>
+	<div id="buttons">
+		<div id="submit">
+			<input type="button" name="button" value="Submit"  onclick="say() " class="btn btn-success"></input>
+		<!-- </div>
+			<div id="clear"> -->
+				<input type="button" name="clear" value="reset" onclick="resetM()" class="btn btn-danger"></input>
+			</div>
+		</div>
+		<br>
+		<center>
 
-		<div id="next3">
-			<div>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box" value="1" readonly>
-				 <input type="text" name="box" id="box" value="3" readonly>
-				 <input type="text" name="box" id="box" value="5" readonly> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="7" readonly>
-				 <input type="text" name="box" id="box">
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box" value="8" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box" value="9" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="2" readonly>
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"  value="3" readonly> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="7" readonly>
-				 <input type="text" name="box" id="box" value="8" readonly> |
-				 <input type="text" name="box" id="box" value="6" readonly>
-				 <input type="text" name="box" id="box" value="4" readonly>
-				 <input type="text" name="box" id="box">
-			 </div>
-		</div>	
+			<div id="bottomOne">
+				<button onclick="showMusic()"  class="btn btn-primary">Hide / Show Music</button>
+			</div>
 
-		<div id="last3">
-			<div>
-				 <input type="text" name="box" id="box" value="3" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="2" readonly> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="9" readonly> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="4" readonly>
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="1" readonly> |
-				 <input type="text" name="box" id="box" value="8" readonly>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-			 </div>
-			 <div>
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box" value="8" readonly> |
-				 <input type="text" name="box" id="box" value="7" readonly>
-				 <input type="text" name="box" id="box" value="6" readonly>
-				 <input type="text" name="box" id="box"> |
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-				 <input type="text" name="box" id="box">
-			 </div>
-		 </div>
-	</div>
-</form>
-<div id="buttons">
-	<div id="submit">
-		<input type="button" name="button" value="Submit"  onclick="say() " class="btn btn-success"></input>
-	<!-- </div>
-	<div id="clear"> -->
-		<input type="button" name="clear" value="reset" onclick="resetM()" class="btn btn-danger"></input>
-	</div>
-</div>
-<br>
-<center>
-
-	<div id="bottomOne">
-		<button onclick="showMusic()"  class="btn btn-primary">Hide / Show Music</button>
+		</center>
+		<br>
 	</div>
 
-</center>
-	<br>
-</div>
-
-<div id="audio">
-	<h3>Pick a Song</h3>
-	
+	<div id="audio">
+		<h3>Pick a Song</h3>
+		
 		<iframe src="https://www.youtube.com/embed/_Zxd4t0QLm0" height="150" width="475"></iframe>
 		<iframe src="https://www.youtube.com/embed/0Mr7dJ4ENtE" height="150" width="475"></iframe>
 		<iframe src="https://www.youtube.com/embed/oI3GdbsbDxk" height="150" width="475"></iframe>
 		<iframe src="https://www.youtube.com/embed/ZHn6d012--k" height="150" width="475"></iframe>
-	
-</div>
+		
+	</div>
 
 
 
