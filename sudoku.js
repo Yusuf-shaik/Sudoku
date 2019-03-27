@@ -214,6 +214,13 @@ function showMusic(){
 
 }
 
+function changeBackground(){
+	var color=document.getElementById("colorMe").value
+	console.log(color)
+	document.body.style.backgroundColor=color
+
+}
+
 // function hideMusic(){
 // }
 
