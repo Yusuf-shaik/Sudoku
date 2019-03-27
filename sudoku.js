@@ -211,10 +211,6 @@ function showMusic(){
 		show.style.display="block"
 	}
 	count++
-	// if (show.style.display=="none") {
-	// 	show.style.display="block"
-		
-	// }
 
 }
 
