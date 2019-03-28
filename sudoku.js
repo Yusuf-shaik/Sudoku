@@ -24,13 +24,13 @@ function say(){
 			// console.log(userInput[i])
 		}
 	}
-	if (sum==81) {
+	if (sum%81==0) {
 		alert("You Won!")
 	}
 	else{
 		alert("You Lost!")
 	}
-
+console.log(sum)
 	end();
 	
 }
@@ -57,15 +57,17 @@ function sayHard(){
 			// console.log(userInput[i])
 		}
 	}
-	if (sum==81) {
+	if (sum%81==0) {
 		alert("You Won!")
 	}
 	else{
 		alert("You Lost!")
 	}
+	console.log(sum)
 	end();
 	
 }
+
 
 //check solution for easy game
 function sayEasy(){
@@ -83,7 +85,7 @@ function sayEasy(){
 			// console.log(userInput[i])
 		}
 	}
-	if (sum==81) {
+	if (sum%81==0) {
 		alert("You Won!")
 	}
 	else{
@@ -93,39 +95,6 @@ function sayEasy(){
 
 	end();
 
-	// endTime=new Date();
-
-	// var totalTime=(endTime-startTime)/1000
-
-	// console.log(totalTime);
-	// // document.getElementById("time").innerHTML= "Total Time: " + Math.floor(totalTime) + " seconds" ;
-	// if (totalTime<60) {
-	// 	alert( "Total Time: " + Math.floor(totalTime) + " seconds" );
-
-	// }
-	// else if (totalTime>=60) {
-	// 	minutes=totalTime/60;
-	// 	seconds=totalTime%60;
-	// 	if (Math.floor(minutes)==1) {
-	// 		Msuffix= " minute "
-	// 	}
-	// 	else{
-	// 		Msuffix=" minutes "
-	// 	}
-
-	// 	if (Math.floor(seconds==1)) {
-	// 		SSuffix=" second "
-	// 	}
-	// 	else{
-	// 		SSuffix = " seconds "
-	// 	}
-	// 		alert( "Total Time: " + Math.floor(minutes) + Msuffix + Math.floor(seconds) + SSuffix) 
-
-	// }
-
-
-	// startTime=new Date();
-	
 
 	
 }
@@ -162,7 +131,6 @@ function end(){
 
 	}
 
-
 	startTime=new Date();
 	
 }
@@ -198,7 +166,6 @@ function resetH(){
 		document.getElementById("formHard").reset();
 
 	}
-	
 
 }
 
@@ -249,9 +216,6 @@ function userValidation(){
 
 	var creditCardLength=creditCard.toString().length
 	// console.log(thename)
-	
-
-
 	
 	var x=true
 	var y=true
